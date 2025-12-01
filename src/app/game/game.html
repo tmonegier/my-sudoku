@@ -1,0 +1,17 @@
+<div class="view-container">
+    <h1>Sudoku</h1>
+
+    <div class="difficulty-selector">
+        <button class="btn" [class.btn-primary]="difficulty === 'easy'" (click)="changeDifficulty('easy')">Easy</button>
+        <button class="btn" [class.btn-primary]="difficulty === 'medium'"
+            (click)="changeDifficulty('medium')">Medium</button>
+        <button class="btn" [class.btn-primary]="difficulty === 'hard'" (click)="changeDifficulty('hard')">Hard</button>
+    </div>
+
+    <app-sudoku-grid [grid]="currentGrid" [initialGrid]="initialGrid" (cellClick)="onCellClick($event)">
+    </app-sudoku-grid>
+
+    <div class="game-controls">
+        <button class="btn btn-primary" (click)="startNewGame()">New Game</button>
+    </div>
+</div>

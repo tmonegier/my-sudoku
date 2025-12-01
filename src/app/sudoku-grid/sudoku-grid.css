@@ -1,0 +1,16 @@
+/* Canvas Wrapper */
+.canvas-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: var(--spacing-xl) 0;
+}
+
+/* Sudoku Canvas */
+.sudoku-canvas {
+    width: 540px;
+    height: 540px;
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-md);
+}
